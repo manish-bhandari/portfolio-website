@@ -20,7 +20,7 @@ const OtherWork = () => {
 const PhotoCard = ({name}) => {
 	return (
     <div className="photocard-container">
-      <img src={`/assets/${name}.jpg`} alt="" />
+      <img src={`assets/${name}.jpg`} alt="" />
       <h1>{name}</h1>
     </div>
   );
