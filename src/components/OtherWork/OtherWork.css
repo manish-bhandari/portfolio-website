@@ -1,0 +1,45 @@
+.otherworkcards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.otherworkcards-container h1{
+    font-size: 20px;
+}
+
+.otherwork-container{
+    width: 100%;
+}
+
+.photocard-container {
+    margin: 0 auto;
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.photocard-container img {
+    height: 250px;    
+    margin: 0 -100%;
+    max-width: none;
+    width: auto;    
+}
+
+.photocard-container h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+}

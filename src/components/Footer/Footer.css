@@ -1,0 +1,9 @@
+.footer-container{
+    margin-bottom: 20px;
+    color: #6FE4BD;
+    font-size: 11px;
+}
+
+.footer-container span{
+    padding: 0 5px;
+}

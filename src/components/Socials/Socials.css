@@ -1,0 +1,13 @@
+.socials-container{
+    display:flex;
+    position: fixed;
+    bottom: 14vh;
+    left: 4%;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+}
+
+.socials-container i{
+    padding: 10px 0;
+}

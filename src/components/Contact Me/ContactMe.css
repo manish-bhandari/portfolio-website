@@ -1,0 +1,86 @@
+.message-form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.message-form input{
+    background:  none;
+    border: 1px #8D8D8D solid;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+    color: white;
+}
+
+.message-form input::placeholder{
+    text-transform:uppercase;
+    font-size: 11px;
+}
+
+textarea{
+    background:  none;
+    border: 1px #8D8D8D solid;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 7px 0;
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.email-num-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-num-container input:first-child{
+    width: 196px;
+    margin-right: 5px;
+}
+
+.email-num-container input:last-child{
+    width: 196px;
+    margin-left: 5px;
+}
+
+.message-form  button{
+    margin-top: 20px;
+    padding: 12px 20px;
+    border-radius:15px;
+    background-color: #6FE4BD;
+    border:none;
+    cursor: pointer;
+    transition: all 0.3 ease-in;
+}
+
+.message-form  button:hover{
+    transition: all 0.3 ease-in;
+    transform: scale(1.05);
+}
+
+.form-container{
+    margin: 150px 0;
+    width: 420px;
+}
+
+.form-label-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label-container h1{
+    color: #6FE4BD;
+    margin: 10px 0;
+}
+.form-label-container p{
+    color: #fff;
+    margin: 10px 0;
+    font-size: 13px;
+    width: 90%;
+    margin-bottom: 50px;
+}
