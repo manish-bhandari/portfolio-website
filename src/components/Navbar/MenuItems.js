@@ -21,7 +21,7 @@ export const MenuItems = [
   },
   {
     title: "Resume",
-    url: "#",
+    url: "/resume.pdf",
     cName: "nav-links resume-btn",
   },
 ];

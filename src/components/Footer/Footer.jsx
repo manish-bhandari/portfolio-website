@@ -3,7 +3,7 @@ import './Footer.css'
 function Footer() {
   return (
     <div className="footer-container">
-        <p>Made with<span>❤️</span> by Manish</p>
+        <p>Made with<span>❤️</span> by Manish Bhandari</p>
     </div>
   )
 }
