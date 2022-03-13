@@ -8,6 +8,8 @@
     font-size: 30px;
 }
 
-.socials-container i{
+.socials-container a{
     padding: 10px 0;
+    text-decoration: none;
+    color: white;
 }
