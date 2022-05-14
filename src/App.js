@@ -13,19 +13,18 @@ import ContactMe from './components/Contact Me/ContactMe';
 
 function App() {
 
-
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Navbar />
       <div className="content">
         <Home />
         <About />
-        <Socials />
-        <Skills />
-        <Experience />
-        <Work />
-        <OtherWork />
-        <ContactMe />
+        {/* <Socials /> */}
+        {/* <Skills /> */}
+        {/* <Experience /> */}
+        {/* <Work /> */}
+        {/* <OtherWork /> */}
+        {/* <ContactMe /> */}
         <div className="left-social-bar"></div>
       </div>
       <Footer />

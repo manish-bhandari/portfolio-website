@@ -64,3 +64,15 @@
     right: -10px;
     z-index: -1;
 }
+
+@media screen and (max-width: 900px){
+    .about-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-left{
+        width: 100%;
+        margin: 0;
+    }
+}

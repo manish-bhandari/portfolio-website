@@ -1,22 +1,3 @@
-.home-section{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    min-height: 110vh;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
-.home-left{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    /* max-width: 500px; */
-    max-width: 500px;
-}
 
 .home-left h1{
     color:white;
@@ -47,22 +28,3 @@
     font-weight: 400;
 }
 
-.home-right{
-    display: flex;;
-    align-items: center;
-    margin-left: 40px;
-    overflow: hidden;
-}
-
-.home-right img{
-    width: 450px;
-    /* width: 100%; */
-    /* min-width: 200px; */
-    /* margin-bottom: 100px; */
-}
-
-@media screen and (max-width: 1300px){
-    .home-right img{
-        display: none;
-    }
-}

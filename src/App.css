@@ -7,8 +7,29 @@
   background-color: #1A2128;
 }
 
+.App.fixed {
+  position: fixed;
+}
+
 body{
   background-color: #1A2128;
+  /* overflow: hidden; */
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.25rem;
+  border-radius: .5rem;
+  background-color: #1c2935;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #647578;
+  border-radius: .25rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #779ea5;
 }
 
 .content{
@@ -26,4 +47,10 @@ body{
   position: fixed;
   left: 5%;
   bottom: 0;
+}
+
+@media screen and (max-width: 900px){
+  .content{
+    padding: 0 40px;
+  }
 }
