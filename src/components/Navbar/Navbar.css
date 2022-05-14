@@ -63,6 +63,7 @@
     display: flex;
 }
 
+/*========== HAMBURGER MENU BUTTON ==========*/
 
 .hamburger-container{
     position: absolute;
@@ -74,7 +75,6 @@
     align-items: center;
     width: 60px;
     height: 60px;
-    /* border: 2px solid #fff; */
 }
 .hamburger{
     width: 35px;
@@ -84,6 +84,7 @@
     box-shadow: 0 2px 5px rgb(54, 41, 40);
     transition: all .5s ease-in-out;
     position: relative;
+    display: none;
 }
 
 .hamburger::after,
@@ -123,6 +124,7 @@
 
 
 
+/*========== Media Queries ==========*/
 
 
 @media screen and (max-width: 850px){
