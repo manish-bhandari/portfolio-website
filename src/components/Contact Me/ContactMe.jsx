@@ -32,10 +32,15 @@ const ContactMe = () => {
 
         <input name="subject" placeholder="Subject" className="form-field" />
 
-        <textarea placeholder="Your Message" id="message" name="message" rows="10" cols="50">
-        </textarea>
+        <textarea
+          placeholder="Your Message"
+          id="message"
+          name="message"
+          rows="10"
+          cols="50"
+        ></textarea>
 
-        <button class="form-field" type="submit">
+        <button className="form-field" type="submit">
           Send Message
         </button>
       </form>

@@ -4,33 +4,37 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [clicked, setclicked] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setvisible] = useState(true);
   const [isAtTop, setIsAtTop] = useState(window.scrollY == 0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleClick = () => {
     setclicked(!clicked);
+    
+    const html_tag = document.getElementsByTagName("html")[0]
   };
+
+  useEffect(() => {
+    const html_tag = document.getElementsByTagName("html")[0];
+    if (clicked)
+      html_tag.style = "overflow: hidden";
+    else
+      html_tag.style = "";
+  }, [clicked])
+  
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    setvisible(prevScrollPos > currentScrollPos);
-    setPrevScrollPos(currentScrollPos);
     setIsAtTop(currentScrollPos == 0)
   };
 
   // new useEffect:
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+  }, [isAtTop]);
 
   useEffect(()=>{
     const appDiv = document.getElementById('App');
-    console.log(clicked)
-    console.log(appDiv.className)
     if (clicked){
       appDiv.className = "App fixed"
     } else {
@@ -55,7 +59,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`nav${visible ? "" : " hidden"}${isAtTop ? "" : " shadow"}${
+      className={`nav${isAtTop ? "" : " shadow"}${
         clicked ? "" : " blur"
       }`}
     >

@@ -1,25 +1,30 @@
+
 .home_data h1 {
   color: white;
   font-size: 19px;
   font-weight: 200;
 }
 
+.home_data{
+  width: 100%;
+}
+
 .home_data h2 {
   color: #6fe4bd;
-  font-size: 75px;
+  font-size: clamp(40px, 13vw, 80px);
   margin: 0px;
   word-wrap: break-word;
-  text-align: left;
   /* width: 100%; */
   font-size-adjust: inherit;
+  max-width: 80vw;
 }
 
 .home_data p {
   color: white;
   font-weight: 200;
-  font-size: 19px;
-  text-align: left;
-  width: 80%;
+  /* width: 70%; */
+  max-width: 80vw;
+  font-size: clamp(7px, 4vw, 25px);
 }
 
 .home_data p span {
@@ -46,38 +51,102 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: black; */
 }
 
 .home_content {
   /* width: 100%; */
   align-items: center;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  /* height: 100vh; */
+  width: 100%;
   align-items: center;
   text-align: left;
 }
 
 .home_scroll {
   width: 100%;
+  color: #6fe4bd;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
 }
+
+.home_scroll span {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+}
+
 .home_scroll h1 {
   /* display: inline-block; */
-  text-align: left;
+  /* text-align: left; */
   margin-left: 20px;
   color: #6fe4bd;
   font-weight: 300;
   font-size: 20px;
 }
 
+.about_break {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   .home_content {
-    grid-template-columns: 1fr;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
-  .home_img{
-    display: none
+  .home_img {
+    width: clamp(270px, 50vw, 300px);
   }
+
+  .home_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home_data h1 {
+    font-size: clamp(10px, 2vw, 20px);
+    font-weight: 300;
+  }
+
+  .home_data h2 {
+    font-size: clamp(22px, 5vw, 70px);
+    /* max-width: 60vw; */
+  }
+
+  .home_data p {
+    font-weight: 300;
+    width: 70vw;
+    font-size: clamp(12px, 2.5vw, 25px);
+    max-lines: 2;
+    line-height: 20px;
+  }
+
+  .home_data p span {
+    color: #e26961;
+    font-weight: 400;
+  }
+
+  .about_break{
+    display: block;
+  }
+
 }
+
+/* @media screen and (max-width:600px){
+  .home_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+} */

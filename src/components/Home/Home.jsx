@@ -11,22 +11,23 @@ function Home() {
           <h2>MANISH BHANDARI</h2>
           <p>
             I'm a Computer Science student at the University of Texas at Austin
-            with a passion for{" "}
-            {/* <Typewriter
-                words={[
-                  "web development",
-                  "full-stack",
-                  "design",
-                  "film making",
-                  "dance",
-                ]}
-                loop={0}
-                cursor
-                cursorStyle="|"
-                typeSpeed={120}
-                deleteSpeed={80}
-                delaySpeed={1000}
-              /> */}
+            with a passion for{' '} 
+            <br className="about_break"></br>
+            <Typewriter
+              words={[
+                "web development",
+                "full-stack",
+                "design",
+                "film making",
+                "dance",
+              ]}
+              loop={0}
+              cursor
+              cursorStyle="|"
+              typeSpeed={120}
+              deleteSpeed={80}
+              delaySpeed={1000}
+            />
           </p>
         </div>
         <div className="home_img">
@@ -34,7 +35,8 @@ function Home() {
         </div>
       </div>
       <div className="home_scroll">
-        <h1>scroll down</h1>
+        <span>Scroll down</span>
+        <i className="fa-solid fa-arrow-down"></i>{" "}
       </div>
     </section>
   );
