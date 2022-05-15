@@ -19,13 +19,13 @@ function App() {
       <div className="content">
         <Home />
         <About />
-        <Socials />
+        {/* <Socials /> */}
         {/* <Skills /> */}
         {/* <Experience /> */}
         {/* <Work /> */}
-        <OtherWork />
+        {/* <OtherWork /> */}
         {/* <ContactMe /> */}
-        <div className="left-social-bar"></div>
+        {/* <div className="left-social-bar"></div> */}
       </div>
       <Footer />
     </div>

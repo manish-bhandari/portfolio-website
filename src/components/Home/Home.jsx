@@ -7,11 +7,11 @@ function Home() {
     <section className="home section">
       <div className="home_content grid">
         <div className="home_data">
-          <h1>HI THERE 👋 MY NAME IS</h1>
-          <h2>MANISH BHANDARI</h2>
+          <h1>Hi, my name is</h1>
+          <h2>Manish Bhandari.</h2>
           <p>
-            I'm a Computer Science student at the University of Texas at Austin
-            with a passion for{' '} 
+            I'm a Computer Science and Digital Arts {"&"} Media student at the
+            University of Texas at Austin with a passion for{" "}
             <br className="about_break"></br>
             <Typewriter
               words={[
@@ -29,14 +29,20 @@ function Home() {
               delaySpeed={1000}
             />
           </p>
+          <a className="home_button" href="#">
+            Click Me
+          </a>
         </div>
         <div className="home_img">
           <img src="assets/guy-graphic.png" alt="" />
         </div>
       </div>
       <div className="home_scroll">
-        <span>Scroll down</span>
-        <i className="fa-solid fa-arrow-down"></i>{" "}
+        <a className="scroll_button" href="#about">
+          <img className="mouse_img" src="assets/mouse.svg" alt="mouse" />
+          <span>Scroll down</span>
+          <i className="fa-solid fa-arrow-down"></i>
+        </a>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@
 
 .nav{
     height: 80px;
-    background: #1a2128;
+    background: var(--background);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +20,7 @@
 
 .nav.blur{
     backdrop-filter: blur(6px);
-    background: #1a2128ee;
+    background: var(--background);
 }
 
 .nav.shadow{
@@ -51,7 +51,7 @@
 }
 
 .nav-link a:hover{
-    color: #6FE4BD;
+    color: var(--primary);
 }
 
 
@@ -76,7 +76,7 @@
 .hamburger{
     width: 35px;
     height: 5px;
-    background: #6FE4BD;
+    background: var(--primary);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgb(54, 41, 40);
     transition: all .5s ease-in-out;
@@ -90,7 +90,7 @@
     left: 0;
     width: 35px;
     height: 5px;
-    background: #6FE4BD;
+    background: var(--primary);
     border-radius: 5px;
     /* box-shadow: 0 2px 5px rgb(54, 41, 40); */
     transition: all .5s ease-in-out;
