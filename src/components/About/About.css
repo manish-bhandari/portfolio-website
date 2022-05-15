@@ -1,78 +1,87 @@
-.about-section{
-    padding-top: 80px;
-    padding-bottom: 180px;
+.about_section {
+  padding: 100px;
+}
+
+.about_data p {
+  color: rgb(183, 181, 181);
+  text-align: left;
+  padding-left: 5px;
+  line-height: 3ch;
+}
+
+.about_data p span {
+  color: var(--primary);
+}
+
+.about_content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+}
+
+.about_img_container img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.about_img_container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about_img_container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 200ms;
+  border: 1px solid rgb(96, 114, 119);
+  top: 20px;
+  left: 20px;
+  /* z-index: -1; */
+}
+
+.about_img_container:hover::before {
+  top: 10px;
+  left: 10px;
+  border: 1px solid var(--primary);
+}
+
+/* ============ MEDIA QUERIES ============ */
+
+@media screen and (max-width: 1200px) {
+  .about_section {
+    padding: 100px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_content {
     display: flex;
-    align-items: center;
-    /* margin: 0 auto; */
-    justify-content:end;
-}
+    flex-direction: column;
+  }
 
-.about-left{
-    width: 40%;
-    text-align: left;
-    min-width: 300px;
-    max-width: 600px;
-    margin-right: 160px;
-}
+  .about_image {
+    display: flex;
+    justify-content: center;
+  }
+  .about_img_container {
+    width: 200px;
+  }
 
-.about-left h1{
-    color: #6FE4BD;
-}
+  .about_img_container::before {
+    top: 15px;
+    left: 15px;
+  }
 
-.about-left p {
-    color: #fff;
-    font-size: 15px;
-}
-
-.about-right img {
-    width: 300px;
-}
-
-.about-title{
-    position: relative;
-}
-
-.about-me-line{
-    position: absolute;
-    width: 150px;
-    border-bottom: solid #6FE4BD 1px;
-    top: 50%;
-    left: 130px;
-}
-
-.about-img-container{
-    position: relative;
-    z-index: 1;
-}
-
-.img-rec1 {
-    border: solid #ffffff 1px;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    z-index: -1;
-}
-
-.img-rec2 {
-    border: solid #ffffff 1px;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    z-index: -1;
-}
-
-@media screen and (max-width: 900px){
-    .about-section{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-left{
-        width: 100%;
-        margin: 0;
-    }
+  .about_img_container:hover::before {
+    top: 7px;
+    left: 7px;
+  }
 }

@@ -49,6 +49,25 @@ body{
   bottom: 0;
 }
 
+.section_title{
+  font-weight: 300;
+  font-size: clamp(17px,4vw, 25px);
+  color: var(--primary);
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.section_title::after{
+    position: relative;
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #263341;
+}
+
 @media screen and (max-width: 900px){
   .content{
     padding: 0 8%;

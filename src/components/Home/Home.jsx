@@ -15,10 +15,11 @@ function Home() {
             <br className="about_break"></br>
             <Typewriter
               words={[
-                "web development",
                 "full-stack",
+                "web dev.",
                 "design",
                 "film making",
+                "photography",
                 "dance",
               ]}
               loop={0}
