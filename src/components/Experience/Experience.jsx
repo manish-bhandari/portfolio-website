@@ -15,13 +15,9 @@ const Experience = (props) => {
 	
 
   return (
-    <section className="experience-section">
-      <div className="experience-title">
-        <h3>Experience</h3>
-        <div className="experience-line"></div>
-      </div>
-
-      <div className="experience-container">
+    <section className="experience_section">
+      <h3 className="experience_title section_title">Experience</h3>
+      <div className="experience_container">
         <ul className="tabs-container">
           {ExperienceItems.map((experience, idx) => (
             <li className={`tab-item ${idx === activeTab ? "active" : ""}`} onClick={()=>setActiveTab(idx)}key={idx}>
@@ -38,7 +34,7 @@ const Experience = (props) => {
 const TabContent = ({tab}) =>{
 	return (
     <div className="tab-content-container">
-      <div className="tab-heading">
+      <div className="tab_heading">
         <h3>
           {tab.role} <span>@ {tab.company}</span>
         </h3>
@@ -48,7 +44,7 @@ const TabContent = ({tab}) =>{
       </div>
       <ul>
         {tab.detail.map((detail, idx) => (
-          <li>
+          <li className="content_detail">
             <img src="assets/bullet-point.svg" alt="bullet point" />
             <p>{detail}</p>
           </li>

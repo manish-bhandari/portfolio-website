@@ -21,7 +21,7 @@ function App() {
         <About />
         {/* <Socials /> */}
         <Skills />
-        {/* <Experience /> */}
+        <Experience />
         {/* <Work /> */}
         {/* <OtherWork /> */}
         {/* <ContactMe /> */}
