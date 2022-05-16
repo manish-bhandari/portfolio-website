@@ -4,14 +4,11 @@ import './Skills.css'
 
 const Skills = (props) => {
   return (
-    <section className="skills-section">
-      <div className="skills-title">
-        <h1>Skills</h1>
-        <div className="skills-line"></div>
-      </div>
+    <section className="skills_section">
+      <h1 className="skills-title section_title">Skills</h1>
       <div className="skills-list">
         {SkillItems.map((skill) => (
-          <SkillCategory name = {skill.name} items={skill.items}></SkillCategory>
+          <SkillCategory name={skill.name} items={skill.items}></SkillCategory>
         ))}
       </div>
     </section>
@@ -27,7 +24,7 @@ const SkillCategory = ({name, items}) => {
         </div>
         <h3>{name}</h3>
       </div>
-      <div className="skills-container">
+      <div className="skills_container">
         {items.map((item) => (
           <SkillBubble name={item} />
         ))}

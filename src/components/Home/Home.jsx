@@ -26,8 +26,8 @@ function Home() {
               cursor
               cursorStyle="|"
               typeSpeed={120}
-              deleteSpeed={80}
-              delaySpeed={1000}
+              deleteSpeed={60}
+              delaySpeed={600}
             />
           </p>
           <a className="home_button" href="#">
