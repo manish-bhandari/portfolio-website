@@ -1,59 +1,35 @@
-.work-section{
+.work_section{
     width: 100%;
     margin-bottom: 150px;
 }
 
 .workcard-container{
     background: #2E363E;
-    width: 250px;
-    /* height: 200px; */
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 0.5rem;
-    margin-top: 40px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px -15px #050d19;
     transition: all 0.2s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.workcard-container:hover > h1{
+    color: var(--primary)
 }
 
 .workcard-container:hover{
     transform: translateY(-4px);
     transition: all 0.2s ease-out;
-
 }
 
-.work-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
 
-.work-line{
-    /* position: absolute; */
-    width: 100px;
-    border-bottom: solid #6FE4BD 1px;
-}
-.work-line2{
-    /* position: absolute; */
-    width: 100px;
-    border-bottom: solid #6FE4BD 1px;
-}
 
 .utilized-container{
     display: flex;
     justify-content: left;
     padding-left: 20px;
-}
-
-.workcard-container p{
-    color: #D3CFCF;
-    padding: 0 25px;
-    font-size: 10px;
-    height: 70px;
-    text-align: left;
-    margin: 0;
+    margin: 30px 0 0 ;
 }
 
 .utilized-container h3{
@@ -65,22 +41,43 @@
 }
 
 .workcard-container h1{
-    color: #A7CAC0;
+    color: #ffffff;
     padding: 10px;
-    font-size: 17px;
+    font-size: 22px;
+    font-weight: 600;
     margin: 0;
+    padding-left: 20px;
     background-color: #555F64;
-    margin-bottom: 10px;
+    text-align: left;
 }
 
-.work-cards-container{
+.work_cards_container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 290px);
-  justify-content: center;
-  padding-bottom: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  /* justify-content: center; */
+  padding: 20px 0 50px 0;
+  gap: 15px
+  
 }
 
-.work-title h1{
-    font-size: 24px;
-    color: #6FE4BD;
+.workcard_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+}
+
+.workcard_details p {
+    color: #d3cfcf;
+    text-align: left;
+    margin: 0;
+}
+
+
+@media (max-width: 700px){
+    .work_cards_container{
+        margin: 0 50px;
+        gap: 30px;
+    }
 }

@@ -1,7 +1,7 @@
 export const ExperienceItems = [
   {
     company: "MyWikis",
-    role: "Full Stack Software Engineering",
+    role: "Full Stack SWE Intern",
     start: "May 2021",
     end: "Sep 2021",
     detail: [
@@ -25,7 +25,7 @@ export const ExperienceItems = [
   },
   {
     company: "HISD",
-    role: "Big Data Engineering Intern",
+    role: "Big Data Engineer Intern",
     start: "Jun 2019",
     end: "Aug 2019",
     detail: [

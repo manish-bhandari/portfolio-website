@@ -3,7 +3,7 @@ export const WorksItems = [
     name: "Todo List",
     utilized: ["React", "HTML", "CSS"],
     description:
-      "This to-do list tool designed for users to quickly and easily add tasksso you get to-dos out of your head and into an actual list.",
+      "This to-do list tool designed for users to quickly and easily add tasks you get out of your head and into an actual list.",
   },
   {
       name: "Laundry Line",

@@ -22,7 +22,7 @@ function App() {
         {/* <Socials /> */}
         <Skills />
         <Experience />
-        {/* <Work /> */}
+        <Work />
         {/* <OtherWork /> */}
         {/* <ContactMe /> */}
         {/* <div className="left-social-bar"></div> */}
