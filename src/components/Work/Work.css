@@ -77,7 +77,14 @@
 
 @media (max-width: 700px){
     .work_cards_container{
-        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 30px;
+    }
+
+    .workcard-container{
+        width: 90%;
     }
 }
