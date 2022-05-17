@@ -3,7 +3,6 @@ import About from './components/About/About';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Socials from './components/Socials/Socials';
-import React, {useState, useEffect}  from 'react';
 import Footer from './components/Footer/Footer';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
@@ -24,7 +23,7 @@ function App() {
         <Experience />
         <Work />
         {/* <OtherWork /> */}
-        {/* <ContactMe /> */}
+        <ContactMe />
         {/* <div className="left-social-bar"></div> */}
       </div>
       <Footer />

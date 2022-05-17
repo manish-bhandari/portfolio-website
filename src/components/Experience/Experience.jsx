@@ -1,19 +1,10 @@
 import React, { useState } from 'react'
-import { useEffect } from 'react';
 import './Experience.css'
 import { ExperienceItems } from './ExperienceItems';
 
-const Experience = (props) => {
+const Experience = () => {
 
 	const [activeTab, setActiveTab] = useState(0);
-	const [tabsData, setTabsData] = useState(0);
-
-	useEffect(() => {
-		console.log(activeTab);
-		console.log(ExperienceItems[activeTab]);
-	}, [activeTab])
-	
-
   return (
     <section className="experience_section">
       <h3 className="experience_title section_title">Experience</h3>
@@ -44,7 +35,7 @@ const TabContent = ({tab}) =>{
       </div>
       <ul>
         {tab.detail.map((detail, idx) => (
-          <li className="content_detail">
+          <li className="content_detail" key={idx}>
             <img src="assets/bullet-point.svg" alt="bullet point" />
             <p>{detail}</p>
           </li>

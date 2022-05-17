@@ -7,8 +7,8 @@ const Skills = (props) => {
     <section className="skills_section">
       <h1 className="skills-title section_title">Skills</h1>
       <div className="skills-list">
-        {SkillItems.map((skill) => (
-          <SkillCategory name={skill.name} items={skill.items}></SkillCategory>
+        {SkillItems.map((skill,idx) => (
+          <SkillCategory name={skill.name} items={skill.items} key={idx}></SkillCategory>
         ))}
       </div>
     </section>
@@ -25,8 +25,8 @@ const SkillCategory = ({name, items}) => {
         <h3>{name}</h3>
       </div>
       <div className="skills_container">
-        {items.map((item) => (
-          <SkillBubble name={item} />
+        {items.map((item,idx) => (
+          <SkillBubble name={item} key={idx}/>
         ))}
       </div>
     </div>
