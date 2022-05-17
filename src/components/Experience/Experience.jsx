@@ -6,7 +6,7 @@ const Experience = () => {
 
 	const [activeTab, setActiveTab] = useState(0);
   return (
-    <section className="experience_section">
+    <section className="experience_section" id="experience">
       <h3 className="experience_title section_title">Experience</h3>
       <div className="experience_container">
         <ul className="tabs-container">

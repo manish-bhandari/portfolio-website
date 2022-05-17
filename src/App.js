@@ -9,25 +9,28 @@ import Experience from './components/Experience/Experience';
 import Work from './components/Work/Work';
 import OtherWork from './components/OtherWork/OtherWork';
 import ContactMe from './components/Contact Me/ContactMe';
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
 
   return (
-    <div className="App" id="App">
-      <Navbar />
-      <div className="content">
-        <Home />
-        <About />
-        {/* <Socials /> */}
-        <Skills />
-        <Experience />
-        <Work />
-        {/* <OtherWork /> */}
-        <ContactMe />
-        {/* <div className="left-social-bar"></div> */}
+    <Router>
+      <div className="App" id="App">
+        <Navbar />
+        <div className="content">
+          <Home />
+          <About />
+          {/* <Socials /> */}
+          <Skills />
+          <Experience />
+          <Work />
+          {/* <OtherWork /> */}
+          <ContactMe />
+          {/* <div className="left-social-bar"></div> */}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

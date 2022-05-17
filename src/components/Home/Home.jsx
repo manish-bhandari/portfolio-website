@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
   return (
@@ -30,20 +31,20 @@ function Home() {
               delaySpeed={600}
             />
           </p>
-          <a className="home_button" href="#">
-            Click Me
-          </a>
+          <HashLink smooth to="/#contact" className="home_button" href="#">
+            Contact Me
+          </HashLink>
         </div>
         <div className="home_img">
           <img src="assets/guy-graphic.png" alt="" />
         </div>
       </div>
       <div className="home_scroll">
-        <a className="scroll_button" href="#about">
+        <HashLink className="scroll_button" smooth to="/#about">
           <img className="mouse_img" src="assets/mouse.svg" alt="mouse" />
           <span>Scroll down</span>
           <i className="fa-solid fa-arrow-down"></i>
-        </a>
+        </HashLink>
       </div>
     </section>
   );

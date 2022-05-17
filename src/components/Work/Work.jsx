@@ -3,7 +3,7 @@ import "./Work.css";
 import { WorksItems } from "./WorksItems";
 const Work = () => {
   return (
-    <section className="work_section">
+    <section className="work_section" id="work">
       <h1 className="work_title section_title">Things I've Made</h1>
       <div className="work_cards_container">
         {WorksItems.map((work, index) => (

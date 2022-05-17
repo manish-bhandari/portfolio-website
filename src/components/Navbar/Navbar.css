@@ -48,6 +48,7 @@
     font-weight: 300;
     letter-spacing: 1px;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .nav-link a:hover{

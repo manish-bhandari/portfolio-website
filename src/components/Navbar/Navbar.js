@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
+import { HashLink } from 'react-router-hash-link'
 
 const Navbar = () => {
   const [clicked, setclicked] = useState(false);
@@ -63,13 +64,14 @@ const Navbar = () => {
         clicked ? "" : " blur"
       }`}
     >
+      {/* <HashLink></HashLink> */}
       {/* <h1 className="navbar-logo">MB</h1> */}
       <img src="assets/mb-logo.svg" alt="" className="nav-logo" />
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
             <li className="nav-link" key={index}>
-              <a href={item.url}>{item.title}</a>
+              <HashLink smooth to={item.url}>{item.title}</HashLink>
             </li>
           );
         })}
