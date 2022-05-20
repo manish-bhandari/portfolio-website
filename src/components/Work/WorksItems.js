@@ -1,12 +1,25 @@
 export const WorksItems = [
   {
-    name: "Manish's Portfolio",
+    name: "This website!",
     utilized: ["React", "HTML", "CSS"],
-    description: "This website!!!",
+    description:
+      "My portfolio website created to showcase work I have created, as well as my skills and experience.",
     links: [
       {
         icon: "fa-brands fa-github",
         url: "https://manishbh.com",
+      },
+    ],
+  },
+  {
+    name: "Texas Talaash",
+    utilized: ["React", "HTML", "CSS"],
+    description:
+    "Website created for Texas Talaash, a bollywood fusion dance team at UT that I'm a part of. ",
+    links: [
+      {
+        icon: "fa-solid fa-globe",
+        url: "https://texastalaash.com",
       },
     ],
   },

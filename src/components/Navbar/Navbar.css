@@ -40,6 +40,8 @@
 
 .nav-link{
     margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
 }
 .nav-link a{
     color: #fff;

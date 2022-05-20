@@ -20,14 +20,13 @@ function App() {
         <div className="content">
           <Home />
           <About />
-          {/* <Socials /> */}
           <Skills />
           <Experience />
           <Work />
           {/* <OtherWork /> */}
           <ContactMe />
-          {/* <div className="left-social-bar"></div> */}
         </div>
+        <Socials />
         <Footer />
       </div>
     </Router>

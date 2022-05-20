@@ -59,11 +59,7 @@ const Navbar = () => {
   },[windowWidth]);
 
   return (
-    <nav
-      className={`nav${isAtTop ? "" : " shadow"}${
-        clicked ? "" : " blur"
-      }`}
-    >
+    <nav className={`nav${isAtTop ? "" : " shadow"}${clicked ? "" : " blur"}`}>
       {/* <HashLink></HashLink> */}
       {/* <h1 className="navbar-logo">MB</h1> */}
       <img src="assets/mb-logo.svg" alt="" className="nav-logo" />
@@ -71,10 +67,15 @@ const Navbar = () => {
         {MenuItems.map((item, index) => {
           return (
             <li className="nav-link" key={index}>
-              <HashLink smooth to={item.url}>{item.title}</HashLink>
+              <HashLink smooth to={item.url}>
+                {item.title}
+              </HashLink>
             </li>
           );
         })}
+        <li className="nav-link">
+          <a href="/resume.pdf">Resume</a>
+        </li>
       </ul>
       <div
         className={`hamburger-container ${clicked ? "open" : ""}`}

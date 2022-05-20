@@ -1,9 +1,27 @@
-.footer-container{
-    margin-bottom: 30px;
-    color: #6FE4BD;
-    font-size: 13px;
+.footer{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+    /* color: var(--primary ); */
 }
 
-.footer-container span{
-    padding: 0 5px;
+.footer a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--gray-color);
+
+}
+.footer a:hover{
+    color: var(--primary );
+}
+
+.footer i{
+    padding:  0 5px;
 }

@@ -5,7 +5,7 @@ import { HashLink } from "react-router-hash-link";
 
 function Home() {
   return (
-    <section className="home section">
+    <section className="home section" id="home">
       <div className="home_content grid">
         <div className="home_data">
           <h1>Hi, my name is</h1>
