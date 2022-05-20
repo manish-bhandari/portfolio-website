@@ -5,7 +5,7 @@
   manishbh.com
 </h1>
 <p align="center">
-  The first iteration of <a href="https://manishbh.com.com" target="_blank">manishbh.com</a> built with React and hosted with github pages.
+  The first iteration of <a href="https://manishbh.com" target="_blank">manishbh.com</a> built with React and hosted with github pages.
 </p>
 
 
