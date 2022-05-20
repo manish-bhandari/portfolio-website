@@ -101,4 +101,8 @@
     .workcard-container{
         width: 90%;
     }
+
+    .work_title{
+    font-size: 15px;
+}
 }

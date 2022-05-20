@@ -51,7 +51,7 @@ body{
 
 .section_title{
   font-weight: 300;
-  font-size: clamp(19px,4vw, 25px);
+  font-size: clamp(19px,4vw, 27px);
   color: var(--primary);
   text-align: left;
   display: flex;

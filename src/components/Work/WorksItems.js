@@ -31,6 +31,12 @@ export const WorksItems = [
     links: [],
   },
   {
+    name: "Gitlet",
+    utilized: ["Java"],
+    description: "UC Berkeley's CS61b project. Created a simple version-control system like git with functionality for commiting, restoring commits, viewing history, making branches, and merging branches.",
+    links: []
+  },
+  {
     name: "Laundry Line",
     utilized: ["React Native", "Firebase"],
     description:

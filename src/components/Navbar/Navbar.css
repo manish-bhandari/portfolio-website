@@ -121,6 +121,16 @@
     transform: rotate(-45deg) translate(5px,5px);
 }
 
+.resume_btn{
+    border: 1px solid var(--primary);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.resume_btn:hover{
+  background-color: var(--primary-opaque);
+}
+
 
 
 /*========== Media Queries ==========*/

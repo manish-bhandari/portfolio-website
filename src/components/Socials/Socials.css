@@ -37,7 +37,8 @@
 .side_email_container a{
     writing-mode: vertical-rl;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: 3px;
 
 }
 @media (max-width: 800px){

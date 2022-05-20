@@ -4,8 +4,10 @@ import { WorksItems } from "./WorksItems";
 const Work = () => {
   return (
     <section className="work_section" id="work">
-      <h1 className="work_title section_title">Things I've Made</h1>
-      <div className="work_cards_container">
+      <h1 className="work_title section_title" data-aos="fade-up">
+        Things I've Made
+      </h1>
+      <div className="work_cards_container" data-aos="fade-up">
         {WorksItems.map((work, index) => (
           <WorkCard
             name={work.name}
@@ -13,6 +15,7 @@ const Work = () => {
             desc={work.description}
             links={work.links}
             key={index}
+            index={index}
           />
         ))}
       </div>
@@ -20,9 +23,9 @@ const Work = () => {
   );
 };
 
-const WorkCard = ({ name, utilized, desc, links }) => {
+const WorkCard = ({ name, utilized, desc, links,index }) => {
   return (
-    <div className="workcard-container">
+    <div className="workcard-container" >
       <div className="project_header">
         <h1>{name}</h1>
         <div className="project_links">

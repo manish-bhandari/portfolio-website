@@ -4,11 +4,18 @@ import './Skills.css'
 
 const Skills = (props) => {
   return (
-    <section className="skills_section">
+    <section
+      className="skills_section"
+      data-aos="fade-up"
+    >
       <h1 className="skills-title section_title">Skills</h1>
       <div className="skills-list">
-        {SkillItems.map((skill,idx) => (
-          <SkillCategory name={skill.name} items={skill.items} key={idx}></SkillCategory>
+        {SkillItems.map((skill, idx) => (
+          <SkillCategory
+            name={skill.name}
+            items={skill.items}
+            key={idx}
+          ></SkillCategory>
         ))}
       </div>
     </section>

@@ -4,7 +4,11 @@ import './Socials.css'
 function Socials() {
   return (
     <section className="socials">
-      <div className="socials_container side_float">
+      <div
+        className="socials_container side_float"
+        data-aos="fade"
+        data-aos-delay="2000"
+      >
         <a
           className="fa-brands fa-linkedin"
           target="_blank"
@@ -21,7 +25,11 @@ function Socials() {
           target="_blank"
         ></a>
       </div>
-      <div className="side_email_container side_float">
+      <div
+        className="side_email_container side_float"
+        data-aos="fade"
+        data-aos-delay="2000"
+      >
         <a href="mailto:bhmanish73@gmail.com">bhmanish73@gmail.com</a>
       </div>
     </section>

@@ -7,7 +7,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="form" id="contact">
+    <div className="form" id="contact" data-aos="fade-up">
       <div className="form-label-container">
         <h1>Contact Me</h1>
         <p>Let's get in touch!</p>

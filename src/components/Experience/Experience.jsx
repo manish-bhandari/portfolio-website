@@ -6,12 +6,20 @@ const Experience = () => {
 
 	const [activeTab, setActiveTab] = useState(0);
   return (
-    <section className="experience_section" id="experience">
+    <section
+      className="experience_section"
+      id="experience"
+      data-aos="fade-up"
+    >
       <h3 className="experience_title section_title">Experience</h3>
       <div className="experience_container">
         <ul className="tabs-container">
           {ExperienceItems.map((experience, idx) => (
-            <li className={`tab-item ${idx === activeTab ? "active" : ""}`} onClick={()=>setActiveTab(idx)}key={idx}>
+            <li
+              className={`tab-item ${idx === activeTab ? "active" : ""}`}
+              onClick={() => setActiveTab(idx)}
+              key={idx}
+            >
               {experience.company}
             </li>
           ))}

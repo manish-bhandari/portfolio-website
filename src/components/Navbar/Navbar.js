@@ -58,23 +58,39 @@ const Navbar = () => {
     }
   },[windowWidth]);
 
+  function handleNavClick(){
+    if (clicked){
+      setclicked(false);
+    }
+  }
+
   return (
     <nav className={`nav${isAtTop ? "" : " shadow"}${clicked ? "" : " blur"}`}>
-      {/* <HashLink></HashLink> */}
-      {/* <h1 className="navbar-logo">MB</h1> */}
-      <img src="assets/mb-logo.svg" alt="" className="nav-logo" />
+      <img
+        src="assets/mb-logo.svg"
+        alt=""
+        className="nav-logo"
+        data-aos="fade"
+      />
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
-            <li className="nav-link" key={index}>
-              <HashLink smooth to={item.url}>
+            <li
+              data-aos="fade-down"
+              data-aos-delay={`${index * 100}`}
+              className="nav-link"
+              key={index}
+            >
+              <HashLink smooth to={item.url} onClick={handleNavClick}>
                 {item.title}
               </HashLink>
             </li>
           );
         })}
-        <li className="nav-link">
-          <a href="/resume.pdf">Resume</a>
+        <li data-aos="fade-down" data-aos-delay="400" className="nav-link">
+          <a className="resume_btn" href="/resume.pdf">
+            Resume
+          </a>
         </li>
       </ul>
       <div
