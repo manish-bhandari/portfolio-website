@@ -15,7 +15,7 @@
 .footer a{
     cursor: pointer;
     text-decoration: none;
-    color: var(--gray-color);
+    color: var(--secondary);
 
 }
 .footer a:hover{

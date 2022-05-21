@@ -4,11 +4,10 @@ import './Skills.css'
 
 const Skills = (props) => {
   return (
-    <section
-      className="skills_section"
-      data-aos="fade-up"
-    >
-      <h1 className="skills-title section_title">Skills</h1>
+    <section className="skills_section">
+      <h1 className="skills-title section_title" data-aos="fade-up">
+        Skills
+      </h1>
       <div className="skills-list">
         {SkillItems.map((skill, idx) => (
           <SkillCategory
@@ -24,7 +23,7 @@ const Skills = (props) => {
 
 const SkillCategory = ({name, items}) => {
 	return (
-    <div className="skill-category-container">
+    <div className="skill-category-container" data-aos="fade-up">
       <div className="skill-title">
         <div className="arrow-img-container">
           <img src="assets/skills/arrow.svg" alt="arrow bullet" />
@@ -32,8 +31,8 @@ const SkillCategory = ({name, items}) => {
         <h3>{name}</h3>
       </div>
       <div className="skills_container">
-        {items.map((item,idx) => (
-          <SkillBubble name={item} key={idx}/>
+        {items.map((item, idx) => (
+          <SkillBubble name={item} key={idx} />
         ))}
       </div>
     </div>

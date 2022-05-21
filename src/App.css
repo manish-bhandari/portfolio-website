@@ -13,7 +13,52 @@
   height: 100%; */
 }
 
-body{
+[data-theme='dark'] {
+  --primary: #31ddac;
+  --secondary: #cad6d9;
+  --background: #0a131d;
+
+  --default : #fff;
+
+  --name: #cad6d9;
+  --hi-iam: var(--primary);
+
+  --white: #ffffff;
+
+  --primary-text: #ffff;
+  --primary-opaque: #31ddac2b;
+
+  --input-color: #1c2937;
+  --tab: #273038;
+
+  --card-primary: #2E363E;
+  --card-secondary: #555F64;
+
+  --mobile-nav: #021114ee;
+}
+
+[data-theme='light'] {
+  --primary: #00cc92;
+  --secondary: #303030;
+  --background: #e8ebee;
+  --default: black;
+  --name: var(--primary);
+  --hi-iam: var(--secondary);
+
+  --white: #dbcaca;
+  --primary-text: #000;
+  --primary-opaque: #31ddac2b;
+
+  --input-color: #d5dbe0;
+  --tab: #dadee0;
+
+  --card-primary: #dfe1e3;
+  --card-secondary: #d1d6db;
+
+  --mobile-nav: rgb(156, 151, 151);
+}
+
+.theme{
   background-color: var(--background);
   /* overflow: hidden; */
 }

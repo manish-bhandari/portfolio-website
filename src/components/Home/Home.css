@@ -1,6 +1,6 @@
 
 .home_data h1 {
-  color: var(--primary);
+  color: var(--hi-iam);
   font-size: clamp(13px,4vw, 20px);
   font-weight: 400;
   margin: 0;
@@ -12,7 +12,7 @@
 }
 
 .home_data h2 {
-  color: #a3bbbf;
+  color: var(--name);
   font-size: clamp(50px, 8vw, 70px);
   margin: 0px;
   word-wrap: break-word;
@@ -21,7 +21,7 @@
 }
 
 .home_data p {
-  color: white;
+  color: var(--secondary);
   font-weight: 200;
   max-width: clamp(500px, 90%,100%);
   font-size: clamp(16px,3vw,20px);
@@ -82,9 +82,7 @@
 }
 
 .home_button:hover{
-  /* opacity: 0.8; */
   background-color: var(--primary-opaque);
-  /* color: white; */
 }
 
 
@@ -120,7 +118,7 @@
 }
 
 .scroll_button span {
-  color: white;
+  color: var(--default);
   font-size: 14px;
   font-weight: 500;
 }

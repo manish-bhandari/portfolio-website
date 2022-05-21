@@ -25,7 +25,7 @@
 }
 
 .form{
-    padding: 100px 0 200px 0;
+    padding: 0 0 200px 0;
 }
 
 .form-label-container{
@@ -36,13 +36,13 @@
 }
 
 .form-label-container h1{
-    color: #6FE4BD;
+    color: var(--primary);
     margin: 0;
     font-weight: 500;
 }
 
 .form-label-container p{
-    color: rgb(191, 204, 211);
+    color: var(--secondary);
     margin: 10px 0;
     font-size: 15px;
     max-width: 600px;
@@ -80,11 +80,12 @@
     margin: 0;
     font-weight: 500;
     font-size: 1.25rem;
+    color: var(--secondary);
 }
 
 .contact_subtitle{
     font-size: 1rem;
-    color:rgb(192, 195, 204);
+    color:var(--secondary);
 }
 
 .form_content{
@@ -104,7 +105,7 @@
 }
 
 .form_input label{
-    color: white;
+    color: var(--default);
     font-size: 13px;
 }
 
@@ -112,14 +113,15 @@
 .form_input textarea{
     font-size: 16px;
     padding: .25rem .5rem .5rem 0;
-    color: rgb(191, 186, 186);
+    color: var(--secondary);
     background-color: var(--input-color);
     outline: none;
     border: none;
     font-family: 'montserrat';
 }
 
-.form_input input:focus, .form_input textarea:focus ~ label{
+.form_input input:focus ~ label,
+.form_input textarea:focus ~ label{
     color: var(--primary);
 }
 

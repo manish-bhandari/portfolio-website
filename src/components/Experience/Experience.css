@@ -1,5 +1,5 @@
 .experience_section {
-  padding: 50px 0 300px;
+  padding: 200px 0 200px;
   height: 500px;
   max-width: 700px;
 }
@@ -11,17 +11,22 @@
 .tab-item {
   list-style: none;
   padding: 10px 10px;
-  color: white;
+  color: var(--default);
   cursor: pointer;
   text-align: left;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
 }
 
 .tab-item:hover {
-  background-color: #273038;
+  background-color: var(--tab);
 }
 
 .tab-item.active {
-  background-color: #273038;
+  background-color: var(--tab);
 }
 
 .tabs-container {
@@ -32,7 +37,7 @@
 
 .tab_heading h3 {
   font-weight: 500;
-  color: white;
+  color: var(--secondary);
   margin-top: 10px;
   margin-bottom: 5px;
   text-align: left;
@@ -44,9 +49,10 @@
 }
 
 .tab_heading p {
-  color: #aaaaaa;
+  color: var(--secondary);
   margin: 0;
   text-align: left;
+  padding-left: 10px;
 }
 
 .tab-content-container ul {
@@ -55,7 +61,7 @@
 
 .tab-content-container li {
   padding: 7px 0px;
-  color: white;
+  color: var(--default);
   font-weight: 200;
   list-style: none;
   display: flex;

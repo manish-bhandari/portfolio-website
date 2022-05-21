@@ -14,7 +14,9 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.7",
+    "react-scrollspy": "^3.4.3",
     "react-simple-typewriter": "^3.0.1",
+    "use-local-storage": "^2.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

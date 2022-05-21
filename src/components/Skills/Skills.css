@@ -1,5 +1,5 @@
 .skills_section{
-    padding: 100px 0 300px;
+    padding: 100px 0 100px;
     position: relative;
     max-width: 700px;
 }
@@ -28,7 +28,7 @@
 }
 
 .skill-category-container h3{
-    color: #fff;
+    color: var(--secondary);
     font-weight: 400;
     font-size: 13px;
 }
@@ -38,6 +38,10 @@
     align-items: center;
     flex-direction: row;
     justify-content: left;
+}
+
+.skill-title h3{
+    font-size: clamp(13px,2vw,18px);
 }
 
 .arrow-img-container{

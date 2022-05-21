@@ -1,10 +1,11 @@
 .work_section{
     width: 100%;
     margin-bottom: 150px;
+    padding: 200px 0;
 }
 
 .workcard-container{
-    background: #2E363E;
+    background: var(--card-primary);
     border-radius: 2px;
     box-shadow: 0 10px 20px -15px #050d19;
     transition: all 0.2s ease;
@@ -32,7 +33,7 @@
 }
 
 .utilized-container h3{
-    color: #99A7AB;
+    color: var(--secondary);
     font-size: 12px;
     font-weight: 300;
     padding: 7px;
@@ -40,7 +41,7 @@
 }
 
 .workcard-container h1{
-    color: #ffffff;
+    color: var(--default);
     padding: 10px;
     font-size: 22px;
     font-weight: 500;
@@ -49,7 +50,7 @@
 }
 
 .project_header{
-    background-color: #555F64;
+    background-color: var(--card-secondary);
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -74,14 +75,14 @@
 }
 
 .workcard_details p {
-    color: #d3cfcf;
+    color: var(--secondary);
     text-align: left;
     margin: 0;
 }
 
 .project_links a{
     font-size: 20px;
-    color: #b7cdcb;
+    color: var(--secondary);
 }
 
 .project_links a:hover{
