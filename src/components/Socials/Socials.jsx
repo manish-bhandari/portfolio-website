@@ -10,20 +10,26 @@ function Socials() {
         data-aos-delay="2000"
       >
         <a
-          className="fa-brands fa-linkedin"
           target="_blank"
+          rel="noreferrer"
           href="https://www.linkedin.com/in/bhandari-manish/"
-        ></a>
+        >
+          <i className="fa-brands fa-linkedin"></i>
+        </a>
         <a
-          className="fa-brands fa-instagram"
           target="_blank"
+          rel="noreferrer"
           href="https://www.instagram.com/manish.bhandariii/"
-        ></a>
+        >
+          <i className="fa-brands fa-instagram"></i>
+        </a>
         <a
-          className="fa-brands fa-github"
           href="https://github.com/manish-bhandari"
           target="_blank"
-        ></a>
+          rel="noreferrer"
+        >
+          <i className="fa-brands fa-github"></i>
+        </a>
       </div>
       <div
         className="side_email_container side_float"

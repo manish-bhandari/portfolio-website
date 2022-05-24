@@ -15,7 +15,7 @@ const Work = () => {
             desc={work.description}
             links={work.links}
             key={index}
-            index={index}
+            hyperlink={work.hyperlink}
           />
         ))}
       </div>
@@ -23,9 +23,9 @@ const Work = () => {
   );
 };
 
-const WorkCard = ({ name, utilized, desc, links,index }) => {
+const WorkCard = ({ name, utilized, desc, links,hyperlink }) => {
   return (
-    <div className="workcard-container" >
+    <a href={hyperlink ? hyperlink : ""} className="workcard-container">
       <div className="project_header">
         <h1>{name}</h1>
         <div className="project_links">
@@ -49,7 +49,7 @@ const WorkCard = ({ name, utilized, desc, links,index }) => {
           ))}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

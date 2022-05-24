@@ -5,13 +5,11 @@ import { NavHashLink } from "react-router-hash-link";
 
 const Navbar = ({theme, toggleTheme}) => {
   const [clicked, setclicked] = useState(false);
-  const [isAtTop, setIsAtTop] = useState(window.scrollY == 0);
+  const [isAtTop, setIsAtTop] = useState(window.scrollY === 0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleClick = () => {
     setclicked(!clicked);
-    
-    const html_tag = document.getElementsByTagName("html")[0]
   };
 
   useEffect(() => {
@@ -25,7 +23,7 @@ const Navbar = ({theme, toggleTheme}) => {
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    setIsAtTop(currentScrollPos == 0)
+    setIsAtTop(currentScrollPos === 0)
   };
 
   // new useEffect:
@@ -95,7 +93,7 @@ const Navbar = ({theme, toggleTheme}) => {
         <li className={`nav-link`} onClick={toggleTheme}>
           <i
             className={`theme_nav fa-solid ${theme} ${
-              theme == "light" ? "fa-sun" : "fa-moon"
+              theme === "light" ? "fa-sun" : "fa-moon"
             }`}
           ></i>
         </li>

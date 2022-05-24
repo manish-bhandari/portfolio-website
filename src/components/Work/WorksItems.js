@@ -1,5 +1,22 @@
 export const WorksItems = [
   {
+    name: "Spotify Profile Visualizer",
+    utilized: ["React", "Express", "Spotify API", "Heroku"],
+    description:
+      "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and more. Original project credit: Brittany Chiang",
+    links: [
+      {
+        icon: "fa-solid fa-globe",
+        url: "https://spotify-profile-visualizer-app.herokuapp.com/",
+      },
+      {
+        icon: "fa-brands fa-github",
+        url: "https://github.com/manish-bhandari/Spotify-App",
+      },
+    ],
+    hyperlink: "https://spotify-profile-visualizer-app.herokuapp.com/",
+  },
+  {
     name: "This website!",
     utilized: ["React", "HTML", "CSS"],
     description:
@@ -10,18 +27,20 @@ export const WorksItems = [
         url: "https://manishbh.com",
       },
     ],
+    hyperlink: "https://manishbh.com",
   },
   {
     name: "Texas Talaash",
     utilized: ["React", "HTML", "CSS"],
     description:
-    "Website created for Texas Talaash, a bollywood fusion dance team at UT that I'm a part of. ",
+      "Website created for Texas Talaash, a bollywood fusion dance team at UT that I'm a part of. ",
     links: [
       {
         icon: "fa-solid fa-globe",
         url: "https://texastalaash.com",
       },
     ],
+    hyperlink: "https://texastalaash.com",
   },
   {
     name: "Todo List",
@@ -33,8 +52,9 @@ export const WorksItems = [
   {
     name: "Gitlet",
     utilized: ["Java"],
-    description: "UC Berkeley's CS61b project. Created a simple version-control system like git with functionality for commiting, restoring commits, viewing history, making branches, and merging branches.",
-    links: []
+    description:
+      "UC Berkeley's CS61b project. Created a simple version-control system like git with functionality for commiting, restoring commits, viewing history, making branches, and merging branches.",
+    links: [],
   },
   {
     name: "Laundry Line",
