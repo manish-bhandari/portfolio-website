@@ -1,9 +1,9 @@
 export const WorksItems = [
   {
-    name: "Spotify Profile Visualizer",
+    name: "Spotilyze",
     utilized: ["React", "Express", "Spotify API", "Heroku"],
     description:
-      "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and more. Original project credit: Brittany Chiang",
+      "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and more. Inspired by Brittany Chiang",
     links: [
       {
         icon: "fa-solid fa-globe",
@@ -15,6 +15,19 @@ export const WorksItems = [
       },
     ],
     hyperlink: "https://spotify-profile-visualizer-app.herokuapp.com/",
+  },
+  {
+    name: "Chat App",
+    utilized: ["React", "Express", "MongoDB", "Node.JS", "Socket.io"],
+    description:
+      "A simple full-stack chat application where you can message other users or groups using the MERN tech stack.",
+    links: [
+      {
+        icon: "fa-brands fa-github",
+        url: "https://github.com/manish-bhandari/chat-app-mern",
+      },
+    ],
+    hyperlink: "https://github.com/manish-bhandari/chat-app-mern",
   },
   {
     name: "This website!",
