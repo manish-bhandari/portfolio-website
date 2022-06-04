@@ -30,6 +30,23 @@ export const WorksItems = [
     hyperlink: "https://github.com/manish-bhandari/chat-app-mern",
   },
   {
+    name: "Nooshtype",
+    utilized: ["React", "SCSS", "Node.js", "Heroku"],
+    description:
+      "A minimalistic typing game. Test yourself in WPM, accuracy, and speed in different modes.",
+    links: [
+      {
+        icon: "fa-solid fa-globe",
+        url: "https://nooshtype.herokuapp.com/",
+      },
+      {
+        icon: "fa-brands fa-github",
+        url: "https://github.com/manish-bhandari/nooshtype",
+      },
+    ],
+    hyperlink: "https://nooshtype.herokuapp.com/",
+  },
+  {
     name: "This website!",
     utilized: ["React", "HTML", "CSS"],
     description:
