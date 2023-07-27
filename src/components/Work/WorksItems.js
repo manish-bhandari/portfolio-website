@@ -54,10 +54,10 @@ export const WorksItems = [
 		links: [
 			{
 				icon: "fa-brands fa-github",
-				url: "https://manishbh.com",
+				url: "https://github.com/manish-bhandari/portfolio-website",
 			},
 		],
-		hyperlink: "https://manishbh.com",
+		hyperlink: "https://github.com/manish-bhandari/portfolio-website",
 	},
 	{
 		name: "Texas Talaash",
