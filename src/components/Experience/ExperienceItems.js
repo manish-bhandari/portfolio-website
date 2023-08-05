@@ -1,7 +1,7 @@
 export const ExperienceItems = [
 	{
 		company: "Glorifi",
-		role: "Software Engineering Intern",
+		role: "FullStack Software Engineering Intern",
 		start: "May 2022",
 		end: "December 2022",
 		detail: [
@@ -11,7 +11,7 @@ export const ExperienceItems = [
 		],
 	},
 	{
-		company: "Multiply Labs",
+		company: "[NDA] Company",
 		role: "Backend Engineering Intern",
 		start: "Jan 2022",
 		end: "May 2022",
